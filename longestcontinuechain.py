@@ -76,9 +76,7 @@ for i in range(n):
             check(i, j, l)
             lol.append(l)
 result=1
-for l in lol:
-        result=max(result,len(l))
+result=len(max(lol,key=len))
 for l in lol:
     if result==len(l):
-        print("Continous longest chain")
         print( ", ".join( repr(e) for e in l ) )
