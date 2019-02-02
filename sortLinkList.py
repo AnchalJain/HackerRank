@@ -52,7 +52,6 @@ class linkedlist:
         while temp != None: 
             print (temp.data, end=" ")
             temp = temp.next
-        print ('') 
         
 llist = linkedlist() 
 l=[]
